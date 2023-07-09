@@ -9,7 +9,7 @@
 #' @param a É um dataframe, que é o mesmo que seu conjunto de dados.
 #'
 #' @examples
-#' criar_interface(iris)1
+#' criar_interface(iris)
 #'
 #' @export
 criar_interface <- function(dados) {

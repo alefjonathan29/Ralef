@@ -17,6 +17,6 @@ Mann-Whitney, Anova ou Kruskal-Wallis. A análise é selecionada automaticamente
 a partir do atendimento dos pressupostos.
 }
 \examples{
-criar_interface(iris)1
+criar_interface(iris)
 
 }
