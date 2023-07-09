@@ -17,6 +17,6 @@ que melhor se adequa parar eles. Entre as análises estão o teste t,
 Mann-Whitney, Anova e Kruskal-Wallis.
 }
 \examples{
-testar_Ralef(iris$, locais)
+testar_Ralef(iris$Sepal.Width, iris$Species)
 
 }

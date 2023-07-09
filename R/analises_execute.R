@@ -8,7 +8,7 @@
 #' @param b É a coluna de dados categóricos.
 #'
 #' @examples
-#' testar_Ralef(iris$, locais)
+#' testar_Ralef(iris$Sepal.Width, iris$Species)
 #'
 #' @export
 testar_Ralef <- function(dados, grupo) {
