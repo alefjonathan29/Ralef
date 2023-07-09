@@ -30,7 +30,7 @@ require(Ralef)
 ### Executando no R:
 
 ``` r
-testar_Ralef(iris$Sepal.Width, iris$Species)
+testar_Ralef(iris$Sepal.Width, iris$Species) #substitua iris pelo nome do seu dataset e os nomes após o $ pelo nome da coluna que quer comparar. A primeira coluna deve ser uma coluna numérica e a segunda categórica. Caso tenha uma coluna numérica (ex: anos de coleta que devem ser comparados) é necessário converte-la para fator (exemplo: dados$anos <- as.factor(dados$ano)).
 ```
 
     ## Loading required package: shiny
@@ -79,7 +79,7 @@ testar_Ralef(iris$Sepal.Width, iris$Species)
     ## 
     ## [1] ">>>>>>>>>>>Teste de Independência das Observações:"
     ##  lag Autocorrelation D-W Statistic p-value
-    ##    1      0.06040443      1.878846   0.364
+    ##    1      0.06040443      1.878846   0.362
     ##  Alternative hypothesis: rho != 0
     ## [1] ""
     ## [1] ">>>>>>>>>>>ANOVA:"
@@ -105,7 +105,7 @@ testar_Ralef(iris$Sepal.Width, iris$Species)
 ### Criando a interface que permite selecionar as variáveis e criar o gráfico em ggplot2:
 
 ``` r
-criar_interface(iris)
+criar_interface(iris) #Substitua iris pelo nome do seu dataset.
 ```
 
 <img src="imagens/imagem1.jpg" />
