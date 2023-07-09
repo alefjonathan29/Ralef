@@ -13,11 +13,12 @@
 #'
 #' @export
 criar_interface <- function(dados) {
-  require(shiny)
-  require(rstatix)
-  require(car)
-  require(tidyverse)
-  require(ggplot2)
+  #Verificando pacotes
+  pacotes <- c("shiny", "rstatix", "car", "tidyverse","ggplot2")                                        # Specify your packages
+  nao_instalados <- pacotes[!(pacotes %in% installed.packages()[ , "Package"])]    # Extract not installed packages
+  if(length(nao_instalados)) install.packages(nao_instalados)                               # Install not installed packages
+  require(pacotes)
+
   # Define a interface gráfica
   ui <- fluidPage(
     titlePanel("Análise de comparação automática (teste t, Mann-Whitney, Anova ou Kruskal-Wallis)"),

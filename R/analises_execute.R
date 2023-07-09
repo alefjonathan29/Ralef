@@ -12,11 +12,12 @@
 #'
 #' @export
 testar_Ralef <- function(dados, grupo) {
-  require(shiny)
-  require(rstatix)
-  require(car)
-  require(tidyverse)
-  require(ggplot2)
+  #Verificando pacotes
+  pacotes <- c("shiny", "rstatix", "car", "tidyverse","ggplot2")                                        # Specify your packages
+  nao_instalados <- pacotes[!(pacotes %in% installed.packages()[ , "Package"])]    # Extract not installed packages
+  if(length(nao_instalados)) install.packages(nao_instalados)                               # Install not installed packages
+  require(pacotes)
+
   # Verificar se são comparados apenas dois grupos
   if (length(unique(grupo)) == 2) {
     # Dados para o primeiro grupo
