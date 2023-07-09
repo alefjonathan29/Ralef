@@ -7,3 +7,6 @@ library(rstatix)
 library(car)
 library(tidyverse)
 
+library(Ralef)
+
+criar_interface(CO2)
