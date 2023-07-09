@@ -1,5 +1,5 @@
 ---
-title: "README"
+title: "Ralef: Automatizando as coisas no R"
 output: github_document
 ---
 
@@ -7,24 +7,40 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
+## Sobre o Ralef
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+Esse pacote tem como objetivo automatizar trabalhos no R que geralmente
+levam um considerável tempo. O Ralef permite realizar análises
+de forma automatizada selecionando as variáveis desejadas. Além disso, 
+esse pacote permite a criação de gráficos com ggplot2 através da seleção 
+de variáveis. Tudo isso em uma interface simples que é apresentada.
 
-## Including Code
+## Quais análises o pacote permite automatizar?
 
-You can include R code in the document as follows:
+Até o momento, foram implementadas as opções de realizar o teste t,
+Mann-Whitney, Anova e Kruskal-Wallis. Isso de forma automatizada. O pacote
+verifica os pressupostos e decide qual teste deve ser realizado.
 
-```{r cars}
-summary(cars)
+## Como instalar
+
+```{r message=FALSE}
+# Caso não tenha os pacotes instalados, remover o símbolo # antes das funções (install.packages).
+# install.packages("devtools")
+require(devtools)
+# install_github("alefjonathan29/Ralef")
+require(Ralef)
 ```
 
-## Including Plots
+##Exemplo de uso das funções:
 
-You can also embed plots, for example:
+Executando no R:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+testar_Ralef(iris$Sepal.Width, iris$Species)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Criando a interface que permite selecionar as variáveis e criar o gráfico em ggplot2:
+```{r eval=FALSE}
+criar_interface(iris)
+```
+
