@@ -30,6 +30,11 @@ criar_interface <- function(dados) {
 
   # Define o servidor
   server <- function(input, output) {
+    require(shiny)
+    require(rstatix)
+    require(car)
+    require(tidyverse)
+    require(ggplot2)
     # Função para executar o teste de pressupostos
     executar_teste <- function() {
       variavel_dependente <- dados[[input$variavel_dependente]]
