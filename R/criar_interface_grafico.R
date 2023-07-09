@@ -1,4 +1,4 @@
-#' Função para rodar as análises automaticamente
+#' Interface para criar gráficos de boxplot em ggplot2
 #'
 #' Esse função executa uma interface gráfica que vc pode selecionar as variáveis
 #' que devem ser comparadas. Ao selecionar as variáveis a interface mostra um

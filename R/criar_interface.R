@@ -1,4 +1,4 @@
-#' Função para rodar as análises automaticamente
+#' Interface para comparação automática de amostras
 #'
 #' Esse função executa uma interface gráfica que vc pode selecionar as variáveis
 #' que devem ser comparadas. Ao selecionar as variáveis a interface mostra um
