@@ -11,7 +11,7 @@
 #' testar_Ralef(iris$, locais)
 #'
 #' @export
-testar_Ralef1 <- function(dados, grupo) {
+testar_Ralef2 <- function(dados, grupo) {
   # Verificar se são comparados apenas dois grupos
   if (length(unique(grupo)) == 2) {
     # Dados para o primeiro grupo
