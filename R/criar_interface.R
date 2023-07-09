@@ -17,7 +17,7 @@ criar_interface <- function(dados) {
   pacotes <- c("shiny", "rstatix", "car", "tidyverse","ggplot2")                                        # Specify your packages
   nao_instalados <- pacotes[!(pacotes %in% installed.packages()[ , "Package"])]    # Extract not installed packages
   if(length(nao_instalados)) install.packages(nao_instalados)                               # Install not installed packages
-  require(pacotes)
+  lapply(pacotes, require, character.only = TRUE)
 
   # Define a interface gráfica
   ui <- fluidPage(
