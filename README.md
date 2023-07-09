@@ -4,10 +4,10 @@ Ralef: Automatizando as coisas no R
 ## Sobre o Ralef
 
 Esse pacote tem como objetivo automatizar trabalhos no R que geralmente
-levam um considerável tempo. O Ralef permite realizar análises de forma
-automatizada selecionando as variáveis desejadas. Além disso, esse
+levam um considerável tempo 😅. O Ralef permite realizar análises de
+forma automatizada selecionando as variáveis desejadas. Além disso, esse
 pacote permite a criação de gráficos com ggplot2 através da seleção de
-variáveis. Tudo isso em uma interface simples que é apresentada.
+variáveis. Tudo isso em uma interface simples que é apresentada. 🙌
 
 ## Quais análises o pacote permite automatizar?
 
@@ -25,9 +25,9 @@ require(devtools)
 require(Ralef)
 ```
 
-\##Exemplo de uso das funções:
+## Exemplo de uso das funções:
 
-Executando no R:
+### Executando no R:
 
 ``` r
 testar_Ralef(iris$Sepal.Width, iris$Species)
@@ -79,7 +79,7 @@ testar_Ralef(iris$Sepal.Width, iris$Species)
     ## 
     ## [1] ">>>>>>>>>>>Teste de Independência das Observações:"
     ##  lag Autocorrelation D-W Statistic p-value
-    ##    1      0.06040443      1.878846   0.344
+    ##    1      0.06040443      1.878846   0.364
     ##  Alternative hypothesis: rho != 0
     ## [1] ""
     ## [1] ">>>>>>>>>>>ANOVA:"
@@ -102,9 +102,10 @@ testar_Ralef(iris$Sepal.Width, iris$Species)
     ## virginica-setosa     -0.454 -0.61485528 -0.2931447 0.0000000
     ## virginica-versicolor  0.204  0.04314472  0.3648553 0.0087802
 
-Criando a interface que permite selecionar as variáveis e criar o
-gráfico em ggplot2:
+### Criando a interface que permite selecionar as variáveis e criar o gráfico em ggplot2:
 
 ``` r
 criar_interface(iris)
 ```
+
+<img src="imagens/imagem1.jpg" />

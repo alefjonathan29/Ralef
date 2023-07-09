@@ -7,13 +7,13 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Sobre o Ralef
+## Sobre o Ralef 
 
 Esse pacote tem como objetivo automatizar trabalhos no R que geralmente
-levam um considerável tempo. O Ralef permite realizar análises
+levam um considerável tempo 😅. O Ralef permite realizar análises
 de forma automatizada selecionando as variáveis desejadas. Além disso, 
 esse pacote permite a criação de gráficos com ggplot2 através da seleção 
-de variáveis. Tudo isso em uma interface simples que é apresentada.
+de variáveis. Tudo isso em uma interface simples que é apresentada. 🙌
 
 ## Quais análises o pacote permite automatizar?
 
@@ -31,16 +31,19 @@ require(devtools)
 require(Ralef)
 ```
 
-##Exemplo de uso das funções:
+## Exemplo de uso das funções:
 
-Executando no R:
+### Executando no R:
 
 ```{r}
 testar_Ralef(iris$Sepal.Width, iris$Species)
 ```
 
-Criando a interface que permite selecionar as variáveis e criar o gráfico em ggplot2:
+### Criando a interface que permite selecionar as variáveis e criar o gráfico em ggplot2:
 ```{r eval=FALSE}
 criar_interface(iris)
+
 ```
+
+<img src="imagens/imagem1.jpg" />
 
