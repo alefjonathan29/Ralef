@@ -2,7 +2,7 @@
 % Please edit documentation in R/criar_interface.R
 \name{criar_interface}
 \alias{criar_interface}
-\title{Função para rodar as análises automaticamente}
+\title{Interface para comparação automática de amostras}
 \usage{
 criar_interface(dados)
 }

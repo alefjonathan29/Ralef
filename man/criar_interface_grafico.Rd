@@ -2,7 +2,7 @@
 % Please edit documentation in R/criar_interface_grafico.R
 \name{criar_interface_grafico}
 \alias{criar_interface_grafico}
-\title{Função para rodar as análises automaticamente}
+\title{Interface para criar gráficos de boxplot em ggplot2}
 \usage{
 criar_interface_grafico(dados)
 }
