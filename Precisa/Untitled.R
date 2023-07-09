@@ -9,4 +9,5 @@ library(tidyverse)
 
 library(Ralef)
 
+testar_Ralef()
 criar_interface(CO2)
