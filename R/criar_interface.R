@@ -28,8 +28,10 @@ criar_interface <- function(dados) {
         selectInput("grupo", "Categorias (Variável independente):", choices = names(dados))
       ),
       mainPanel(
-        plotOutput("boxplot"),
-        verbatimTextOutput("resultado")
+        tabsetPanel(
+          tabPanel("Plot",plotOutput("boxplot")),
+          tabPanel("Sumário",verbatimTextOutput("resultado"))
+        )
       )
     )
   )

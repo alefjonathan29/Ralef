@@ -33,7 +33,7 @@ criar_interface_grafico <- function(dados) {
       ),
       mainPanel(
         plotOutput("boxplot"),
-        textOutput('codigo_grafico')  # Saída para exibir o código do gráfico
+        verbatimTextOutput('codigo_grafico')  # Saída para exibir o código do gráfico
       )
     )
   )
@@ -68,7 +68,7 @@ criar_interface_grafico <- function(dados) {
     })
 
     # Renderizar o código do gráfico na interface
-    output$codigo_grafico <- renderPrint({
+    output$codigo_grafico <- renderText({
       if (is.null(input$variavel_dependente) || is.null(input$grupo) || is.null(input$faceta)) {
         return(NULL)
       }
