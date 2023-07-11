@@ -4,8 +4,7 @@ Title: Ralef
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: Alef Jonathan <a.lef93@hotmail.com>
-Description: O Ralef é um pacote desenvolvido para auxiliar automatiza
-algumas rotinas em R, optimizando o tempo de trabalho.
+Description: O Ralef é um pacote desenvolvido para auxiliar automatiza algumas rotinas em R, optimizando o tempo de trabalho.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
