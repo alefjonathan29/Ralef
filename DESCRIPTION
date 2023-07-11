@@ -1,12 +1,15 @@
 Package: Ralef
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Ralef
 Version: 0.1.0
 Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Alef Jonathan <a.lef93@hotmail.com>
+Description: O Ralef é um pacote desenvolvido para auxiliar automatiza
+algumas rotinas em R, optimizando o tempo de trabalho.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Imports: shiny, rstatix, car, tidyverse, ggplot2, ggthemes
+URL: https://github.com/alefjonathan29/Ralef
+BugReports: https://github.com/alefjonathan29/Ralef/issues
 RoxygenNote: 7.1.2
