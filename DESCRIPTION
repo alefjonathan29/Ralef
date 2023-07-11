@@ -8,7 +8,6 @@ Description: O Ralef é um pacote desenvolvido para auxiliar automatiza algumas 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Imports: shiny, rstatix, car, tidyverse, ggplot2, ggthemes
 URL: https://github.com/alefjonathan29/Ralef
 BugReports: https://github.com/alefjonathan29/Ralef/issues
 RoxygenNote: 7.1.2
