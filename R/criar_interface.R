@@ -25,8 +25,10 @@ criar_interface <- function(dados) {
     sidebarLayout(
       sidebarPanel(
         selectInput("variavel_dependente", "Variável Dependente:", choices = names(dados)),
-        selectInput("grupo", "Categorias (Variável independente):", choices = names(dados))
-      ),
+        selectInput("grupo", "Categorias (Variável independente):", choices = names(dados)),
+
+
+        ),
       mainPanel(
         tabsetPanel(
           tabPanel("Plot",plotOutput("boxplot")),
