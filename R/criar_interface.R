@@ -54,7 +54,7 @@ criar_interface <- function(dados) {
       variavel_dependente <- dados[[input$variavel_dependente]]
       grupo <- dados[[input$grupo]]
       dados_plot <- data.frame(grupo, variavel_dependente)
-      ggplot(dados_plot, aes(x = grupo, y = variavel_dependente, fill = grupo)) +
+      ggplot(dados_plot, aes(x = as.factor(grupo), y = variavel_dependente, fill = grupo)) +
         geom_boxplot()+
         theme_bw()
     })
