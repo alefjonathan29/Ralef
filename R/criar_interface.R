@@ -52,9 +52,9 @@ criar_interface <- function(dados) {
     # Renderizar o boxplot na interface
     output$boxplot <- renderPlot({
       variavel_dependente <- dados[[input$variavel_dependente]]
-      grupo <- dados[[input$grupo]]
+      grupo <- as.factor(dados[[input$grupo]])
       dados_plot <- data.frame(grupo, variavel_dependente)
-      ggplot(dados_plot, aes(x = asfactor(grupo), y = variavel_dependente, fill = grupo)) +
+      ggplot(dados_plot, aes(x = grupo, y = variavel_dependente, fill = grupo)) +
         geom_boxplot()+
         theme_bw()
     })
