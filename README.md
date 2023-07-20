@@ -18,7 +18,7 @@ pacote verifica os pressupostos e decide qual teste deve ser realizado.
 ## Como instalar
 
 ``` r
-# Caso não tenha os pacotes instalados, remover o símbolo # antes das funções (install.packages).
+# Caso não tenha os pacotes instalados, remover o símbolo # antes das funções (install.packages e remotes::install_gitbub).
 # install.packages("devtools")
 require(devtools)
 # remotes::install_github("alefjonathan29/Ralef", force = T)
