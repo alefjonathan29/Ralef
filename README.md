@@ -21,7 +21,7 @@ pacote verifica os pressupostos e decide qual teste deve ser realizado.
 # Caso não tenha os pacotes instalados, remover o símbolo # antes das funções (install.packages).
 # install.packages("devtools")
 require(devtools)
-# install_github("alefjonathan29/Ralef", force= T)
+# remotes::install_github("alefjonathan29/Ralef", force = T)
 require(Ralef)
 ```
 
